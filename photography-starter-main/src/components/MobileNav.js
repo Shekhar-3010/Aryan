@@ -9,6 +9,7 @@ import {Link} from 'react-router-dom';
 
 //Import Motion
 import { motion } from 'framer-motion';
+import Socials from './Socials';
 
 //Menu Variants
 const menuVariants = {
@@ -59,7 +60,11 @@ const MobileNav = () => {
       <li>
           <Link to='/contact'>Contact</Link>
       </li>
+      <li>
+      <Socials/>
+      </li>
     </ul>
+    
     </motion.div>
   </nav>
   );

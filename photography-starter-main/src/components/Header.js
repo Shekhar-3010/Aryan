@@ -1,6 +1,6 @@
 import React from "react";
 import Socials from "./Socials";
-import logo from "../img/header/logo.svg";
+import logo from "../img/header/logo3.png";
 import MobileNav from "./MobileNav";
 //componets import
 
@@ -13,7 +13,8 @@ const Header = () => {
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* logo*/}
         <Link to={"/"} className="max-w-[200px] ">
-          <img src={logo} alt="logo" />
+          
+          <img src={logo} style={{height:"130px"}}/>
         </Link>
         {/* nav initally hidden show on desktop mode */}
         <nav className="hidden  xl:flex gap-x-12 font-semibold ">

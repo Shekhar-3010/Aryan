@@ -4,17 +4,26 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Portfolio from "../pages/Portfolio";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import { AnimatePresence } from "framer-motion";
+import Wedding from "./Wedding";
 
 const AnimRoutes = () => {
+  const location=useLocation();
+
   return(
-  
-  <Routes>
+  <AnimatePresence initial={true} mode="wait ">
+  <Routes key={location.pathname}>
     
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/portfolio" element={<Portfolio />} />
     <Route path="/contact" element={<Contact />} />
+   
   </Routes> 
+  <Routes>
+  <Route path="/animal" element={<Wedding />} />
+  </Routes>
+  </AnimatePresence>
   );
   
 };
