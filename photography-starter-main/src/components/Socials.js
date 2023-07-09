@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 
 //Import Icons
-import {Im500Px, ImTwitter, ImWhatsapp, ImTelegram, ImSkype} from 'react-icons/im';
+import {Im500Px, ImTwitter, ImWhatsapp, ImTelegram, ImSkype,ImInstagram, ImFacebook, ImPhone} from 'react-icons/im';
 
 //Import Circle Context
 import { CursorContext } from '../context/CursorContext';
@@ -11,22 +11,22 @@ const Socials = () => {
   <ul className='flex gap-x-4 '>
       <li className='hover:scale-150'>
         <a href="https://500px.com/" target='_blank'>
-          <Im500Px />
+          <ImInstagram />
         </a>
       </li>
       <li className='hover:scale-150'>
         <a href="http://www.twitter.com" target='_blank'>
-          <ImTwitter />
-        </a>
-      </li>
-      <li className='hover:scale-150'>
-        <a href="https://www.whatsapp.com/" target='_blank'>
           <ImWhatsapp />
         </a>
       </li>
       <li className='hover:scale-150'>
+        <a href="https://www.whatsapp.com/" target='_blank'>
+          <ImFacebook />
+        </a>
+      </li>
+      <li className='hover:scale-150'>
         <a href="https://telegram.org/" target='_blank'>
-          <ImTelegram />
+          <ImPhone/>
         </a>
       </li>
       <li className='hover:scale-150'>

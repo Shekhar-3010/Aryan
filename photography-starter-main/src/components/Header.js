@@ -17,28 +17,28 @@ const Header = (props) => {
           <img src={logo} style={{height:"130px"}}/>
         </Link>
         {/* nav initally hidden show on desktop mode */}
-        <nav className="hidden  xl:flex gap-x-12 font-semibold ">
+        <nav className="hidden  xl:flex gap-x-12 font-semibold  ">
           <Link
             to={"/"}
-            className="text-[#696c6d] hover:text-primary transition"
+            className="text-[#696c6d] hover:text-primary transition hover:scale-125"
           >
             Home
           </Link>
           <Link
             to={"/about"}
-            className="text-[#696c6d] hover:text-primary transition"
+            className="text-[#696c6d] hover:text-primary transition hover:scale-125"
           >
             About
           </Link>
           <Link
             to={"/contact"}
-            className="text-[#696c6d] hover:text-primary transition"
+            className="text-[#696c6d] hover:text-primary transition hover:scale-125"
           >
             Contact
           </Link>
           <Link
             to={"/portfolio"}
-            className="text-[#696c6d] hover:text-primary transition"
+            className="text-[#696c6d] hover:text-primary transition hover:scale-125"
           >
             Portfolio
           </Link>

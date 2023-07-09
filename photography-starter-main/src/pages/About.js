@@ -12,7 +12,7 @@ import Header from "../components/Header";
 const About = () => {
   return (
     <>
-    <Header/>
+    <Header  color="white"/>
     <motion.section
       initial={{ opacity: 0, y: "100%" }}
       animate={{ opacity: 1, y: 0 }}
