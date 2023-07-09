@@ -7,9 +7,9 @@ import MobileNav from "./MobileNav";
 //import links which we will be using
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <header className=" fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
+    <header className="   fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center" style={{backgroundColor:props.color}}>
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* logo*/}
         <Link to={"/"} className="max-w-[200px] ">

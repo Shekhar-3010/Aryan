@@ -6,6 +6,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import { AnimatePresence } from "framer-motion";
 import Wedding from "./Wedding";
+import Nature from "./Nature";
 
 const AnimRoutes = () => {
   const location=useLocation();
@@ -22,6 +23,8 @@ const AnimRoutes = () => {
   </Routes> 
   <Routes>
   <Route path="/animal" element={<Wedding />} />
+  <Route path="/nature" element={<Nature />} />
+  
   </Routes>
   </AnimatePresence>
   );
