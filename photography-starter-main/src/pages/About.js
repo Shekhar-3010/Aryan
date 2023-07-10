@@ -1,6 +1,6 @@
 import React from "react";
 //here images are imported
-import aryanabout from "../img/about/aryanabout.jpg";
+import aryanabout from "../img/about/aryan99.png";
 import { Link } from "react-router-dom";
 //import motion
 import { motion } from "framer-motion";
@@ -22,7 +22,7 @@ const About = () => {
     >
       <div className="container mx-auto h-full relative overflow-y-auto">
         {/**  Image and text wrapper*/}
-        <div className=" flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 text-center lg:text-left lg:pt-16">
+        <div className=" flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 text-center lg:text-left lg:pt-16 over overflow-hidden">
           <div className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden
           ">
             <img src={aryanabout} />

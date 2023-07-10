@@ -56,45 +56,62 @@ const Portfolio = () => {
             </motion.div>
             {/* image grid */}
             <div className="grid grid-cols-2 lg:gap-2">
-              {/* image */}
-              <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-                <Link to="/animal">
-                  <img
-                    className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
-                    src={Image1}
-                    alt=""
-                  />
-                </Link>
-              </div>
-
-              <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-                <Link to="/nature">
-                  <img
-                    className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
-                    src={Image2}
-                    alt=""
-                  />
-                </Link>
-              </div>
-              <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-                <Link to="/portrait">
-                  <img
-                    className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
-                    src={Image3}
-                    alt=""
-                  />
-                </Link>
-              </div>
-              <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-                <Link to="/bestclicks">
-                  <img
-                    className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
-                    src={Image4}
-                    alt=""
-                  />
-                </Link>
-              </div>
+            {/* image 1 */}
+            <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden relative">
+              <Link to="/animal">
+                <img
+                  className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
+                  src={Image1}
+                  alt=""
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 hover:text-6xl transition-opacity duration-300">
+                  <p className="text-white text-center">Animals</p>
+                </div>
+              </Link>
             </div>
+          
+            {/* image 2 */}
+            <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden relative">
+              <Link to="/nature">
+                <img
+                  className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
+                  src={Image2}
+                  alt=""
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 hover:text-6xl transition-opacity duration-300">
+                  <p className="text-white text-center">Nature</p>
+                </div>
+              </Link>
+            </div>
+          
+            {/* image 3 */}
+            <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden relative">
+              <Link to="/portrait">
+                <img
+                  className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
+                  src={Image3}
+                  alt=""
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 hover:text-6xl transition-opacity duration-300">
+                  <p className="text-white text-center">Sports</p>
+                </div>
+              </Link>
+            </div>
+          
+            {/* image 4 */}
+            <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden relative">
+              <Link to="/bestclicks">
+                <img
+                  className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
+                  src={Image4}
+                  alt=""
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100  hover:text-6xl transition-opacity duration-300">
+                  <p className="text-white text-center">BestClicks</p>
+                </div>
+              </Link>
+            </div>
+          </div>
           </div>
         </div>
       </motion.section>

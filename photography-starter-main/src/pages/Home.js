@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 // import images
-import aryan from "../img/home/aryanno.png"
+import aryan from "../img/home/aryan4.jpg"
 
 
 // import link
@@ -23,7 +23,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={transition1}
-      className="section bg-blue-200 overflow-hidden"
+      className="section bg-white-200 overflow-hidden"
     >
       <div className="container mx-auto h-full relative">
         {/* text and image wrapper */}

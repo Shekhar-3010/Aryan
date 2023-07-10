@@ -9,12 +9,14 @@ import { Link } from "react-router-dom";
 
 const Header = (props) => {
   return (
-    <header className="   fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center" style={{backgroundColor:props.color}}>
+    <header
+      className="   fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center"
+      style={{ backgroundColor: props.color }}
+    >
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* logo*/}
         <Link to={"/"} className="max-w-[200px] ">
-          
-          <img src={logo} style={{height:"130px"}}/>
+          <img src={logo} style={{ height: "130px" }} />
         </Link>
         {/* nav initally hidden show on desktop mode */}
         <nav className="hidden  xl:flex gap-x-12 font-semibold  ">
@@ -45,12 +47,11 @@ const Header = (props) => {
 
           {/*socils*/}
         </nav>
-        
       </div>
       <Socials />
-      {/*Mobile nav bar */}
       <MobileNav />
-      
+
+      {/*Mobile nav bar */}
     </header>
   );
 };
