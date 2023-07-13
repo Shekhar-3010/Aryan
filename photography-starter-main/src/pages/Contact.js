@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 // Import Images
-import aryancon from "../img/contact/aryan202.png";
+import aryancon from "../img/contact/xza.png";
 
 // Import Motion
 import { motion } from "framer-motion";
@@ -25,13 +25,12 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-   
     emailjs
       .sendForm(
-        "career@HoneyBadgers",
-        "template_l85j4n8",
+        "service_22uzg44",
+        "template_4dyo8ui",
         form.current,
-        "1lHzd3JPUtLfZfXVu",
+        "tkVajDIr47ow5T5V-",
         this
       )
       .then(
@@ -121,7 +120,8 @@ const Contact = () => {
               transition={{ transition: transition1, duration: 1.5 }}
               className="lg:flex-1"
             >
-              <img src={aryancon} alt="" className="hover:scale-110" />
+              {" "}
+              <img src={aryancon} alt="" className="  hover:scale-110" />
             </motion.div>
           </div>
         </div>
